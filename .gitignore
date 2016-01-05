@@ -1,0 +1,16 @@
+dotfiles/.vim/bundle/*
+dotfiles/.vim/.bundle/*
+dotfiles/.vim/doc/*
+dotfiles/.vim/.netrwhist
+dotfiles/.vim/undo/*
+dotfiles/nvim/bundle/*
+dotfiles/nvim/doc/*
+dotfiles/nvim/.netrwhist
+dotfiles/nvim/syntax/*
+dotfiles/nvim/undo/*
+
+dotfiles/.irssi/saved_colors
+dotfiles/.weechat/logs/*
+away.log
+
+dotfiles/ranger/bookmarks

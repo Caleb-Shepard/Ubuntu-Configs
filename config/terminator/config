@@ -1,0 +1,93 @@
+[global_config]
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  focus = mouse
+  inactive_color_offset = 0.75
+  scroll_tabbar = True
+  suppress_multiple_term_dialog = True
+  title_font = Inconsolata Medium 10
+  title_inactive_bg_color = "#707277"
+  title_inactive_fg_color = "#a4a6ab"
+  title_transmit_bg_color = "#5b5955"
+  title_transmit_fg_color = "#a4a6ab"
+  title_use_system_font = False
+[keybindings]
+  broadcast_all = <Primary><Alt>b
+  broadcast_group = None
+  broadcast_off = <Primary><Shift>b
+  close_term = None
+  close_window = None
+  cycle_next = None
+  cycle_prev = None
+  edit_window_title = None
+  full_screen = None
+  go_down = <Primary><Alt>j
+  go_left = <Primary><Alt>h
+  go_right = <Primary><Alt>l
+  go_up = <Primary><Alt>k
+  group_all = None
+  group_tab = None
+  help = None
+  hide_window = None
+  insert_number = None
+  insert_padded = None
+  layout_launcher = None
+  move_tab_left = None
+  move_tab_right = None
+  new_tab = None
+  new_terminator = None
+  new_window = None
+  next_profile = <Super>p
+  prev_tab = None
+  previous_profile = <Shift><Super>p
+  reset = None
+  resize_down = <Primary><Shift><Alt>j
+  resize_left = <Primary><Shift><Alt>h
+  resize_right = <Primary><Shift><Alt>l
+  resize_up = None
+  rotate_ccw = None
+  rotate_cw = None
+  scaled_zoom = None
+  toggle_zoom = None
+  ungroup_all = None
+  ungroup_tab = None
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#2d2c28"
+    background_darkness = 0.89
+    background_image = None
+    background_type = transparent
+    cursor_color = "#a4a6aa"
+    font = Inconsolata-g for Powerline Medium 11
+    foreground_color = "#a4a6ab"
+    icon_bell = False
+    palette = "#5b5955:#c4756e:#559a6a:#9b8a4b:#6a8dca:#b577ac:#0fa9b8:#dbdde2:#707277:#f6a299:#82c896:#cab775:#98bbfb:#e5a4db:#53cad9:#f7f9ff"
+    scroll_on_output = False
+    scrollback_lines = 5000
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
+  [[solarized]]
+    background_color = "#002b36"
+    background_darkness = 0.87
+    background_image = None
+    background_type = transparent
+    cursor_color = "#a4a6aa"
+    font = Inconsolata-g for Powerline Medium 11
+    foreground_color = "#839496"
+    icon_bell = False
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    scroll_on_output = False
+    scrollback_lines = 5000
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
