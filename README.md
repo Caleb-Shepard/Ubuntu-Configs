@@ -23,3 +23,18 @@
     * vim configuration file sourced when vim is run
 - .zshrc
     * zsh configuration file that is sourced when zsh is run
+
+## bashrc ##
+###Information on the .bashrc###
+This .bashrc is designed to be adaptable and usable across different terminals in Linux and UNIX based operating systems.
+Your .bashrc should be created inside of your home folder.
+  ~/.bashrc
+
+This script is tested primarily in OSX, Arch Linux, and Ubuntu. Testing in other operating systems and terminals not explicitly named in the .bashrc may be sporadic, and full support for those operating systems will not be guaranteed.
+
+When using this script in OSX, be sure to run the command "exec bash" on terminal startup. On Ubuntu, this may be the default behavior and exec bash will not need to be run by you manually.
+
+Any program aliases included will not work if the programs and dependencies required are not installed on your system. Many modern terminals will automatically offer to fix this.
+
+OSX support will soon be removed; please see the OSX branch.
+Message either Caleb-Shepard or dylnmc if you have any requests or would like to contribute
