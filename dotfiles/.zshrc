@@ -34,18 +34,7 @@ while IFS='' read -r line; do
     fi;
 done <<< $(figlet -tf big "${TIME_OF_DAY}, ${USER}." 2>/dev/null) || echo "${TIME_OF_DAY}, ${USER}";
 
-bindkey -v
-bindkey '^P' up-history
-bindkey '^N' down-history
-bindkey '^?' backward-delete-char
-bindkey '^h' backward-delete-char
-bindkey '^w' backward-kill-word
-bindkey '^r' history-incremental-search-backward
-export KEYTIMEOUT=1
-
 RANGER_LOAD_DEFAULT_RC="FALSE";
-
-source /etc/profile.d/vte.sh 2>/dev/null;
 
 # edit aliases
 alias tm='tmux -2'
