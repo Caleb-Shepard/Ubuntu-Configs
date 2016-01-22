@@ -1,6 +1,7 @@
 # configs and more #
 ### Adapted and modified for OSX usage from dylnmc's config files ###
--- See dylnmc's dotfiles repository for a much more complete and informative experience with configuration files. 
+-- See dylnmc's dotfiles repository for a much more complete, well maintained, and informative experience with configuration files. 
+-- If you are a Linux user, these files may not be for you. These configs are tailored for OSX and may be incompatible.
 
 ## Within this repository are configuration files for the following ##
 - .bashrc              - bash profile (sourced for new bash shell)
