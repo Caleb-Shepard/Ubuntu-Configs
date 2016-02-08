@@ -32,7 +32,7 @@ Your .bashrc should be created inside of your home folder.
 
 This script is tested primarily in OSX, Arch Linux, and Ubuntu. Testing in other operating systems and terminals not explicitly named in the .bashrc may be sporadic, and full support for those operating systems will not be guaranteed.
 
-When using this script in OSX, be sure to run the command "exec bash" on terminal startup. On Ubuntu, this may be the default behavior and exec bash will not need to be run by you manually.
+When using this script in OSX, be sure to run the command "exec bash" on terminal startup. On Ubuntu, this may be the default behavior and exec bash will not need to be run by you manually; send text at start 'exec bash; echo -e "\x1b[1;1H\x1b[J"' or 'exec bash; clear' for the best results. Note: 'exec bash; clear' will show up in history after startup.
 
 Any program aliases included will not work if the programs and dependencies required are not installed on your system. Many modern terminals will automatically offer to fix this.
 
