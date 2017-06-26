@@ -49,13 +49,13 @@ alias ovr='open -e ~/.vimrc'
 alias oe='open -e'
 
 # ls options
-alias l='ls'
-alias la='ls -AF'
-alias ll='ls -lAF'
-alias cl='clear; ls'
-alias cls='clear; ls'
-alias cla='clear; la'
-alias cll='clear; ll'
+alias l='pwd; ls -G'
+alias la='pwd; ls -AFG'
+alias ll='pwd; ls -lAFG'
+alias cl='clear; pwd; ls -G'
+alias cls='clear; pwd; ls -G'
+alias cla='clear; pwd; la -G'
+alias cll='clear; pwd; ll -G'
 
 # grep options
 alias grep='grep --color=auto'
@@ -67,10 +67,8 @@ alias py='python'
 alias gg='g++'
 alias jc='javac'
 alias ja='java'
-alias eclipse='cd ~/eclipse/java-latest-released/Eclipse.app/Contents/MacOS; (./eclipse&); cd -'
 
 #cd aliases
-alias top='cd /'
 alias desk='cd ~/Desktop/'
 alias docs='cd ~/Documents/'
 alias sc='cd ~/Scripts/'
@@ -102,6 +100,6 @@ setopt nocheckjobs
 zstyle ':completion:*' special-dirs true
 
 #if(zsh completion is installed) we will enable it
-if [ -f $(brew --prefix)/etc/zsh_completion ]; then
-    . $(brew --prefix)/etc/zsh_completion
-fi
+# if [ -f $(brew --prefix)/etc/zsh_completion ]; then
+#     . $(brew --prefix)/etc/zsh_completion
+# fi
