@@ -36,5 +36,6 @@ When using this script in OSX, be sure to run the command "exec bash" on termina
 
 Any program aliases included will not work if the programs and dependencies required are not installed on your system. Many modern terminals will automatically offer to fix this.
 
-OSX support will soon be removed; please see the OSX branch.
-Message either Caleb-Shepard or dylnmc if you have any requests or would like to contribute
+## Authors ##
+Caleb-Shepard
+dylnmc
