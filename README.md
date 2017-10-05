@@ -45,6 +45,8 @@ When using this script in Mac OS, you may run the command "exec bash" or /bin/ba
 
 Any aliases pointing to programs not included in coreutils may not work if the programs and dependencies required are not installed on your system. Many modern terminals will automatically offer to fix this.
 
+![bash_shell](img/screenshot.png?raw=true "Bash Shell")
+
 ## Authors ##
 Caleb-Shepard
 
