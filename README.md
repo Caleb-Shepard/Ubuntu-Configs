@@ -41,7 +41,7 @@ Your .bashrc should be created inside of your home folder.
 
 This script is only used in Mac OS sierra; however the bash shell tends to act consistently across different NIX based systems. The .bashrc in this repository should only use common tools and coreutils.
 
-When using this script in OSX, you may run the command "exec bash" or /bin/bash on terminal startup to launch the bash shell. On Ubuntu, this may be the default behavior and exec bash will not need to be run by you manually; send text at start 'exec bash; echo -e "\x1b[1;1H\x1b[J"' or 'exec bash; clear' for the best results. Note: 'exec bash; clear' will show up in history after startup.
+When using this script in Mac OS, you may run the command "exec bash" or /bin/bash on terminal startup to launch the bash shell. On Ubuntu, this may be the default behavior and exec bash will not need to be run by you manually; send text at start 'exec bash; echo -e "\x1b[1;1H\x1b[J"' or 'exec bash; clear' for the best results. Note: 'exec bash; clear' will show up in history after startup.
 
 Any aliases pointing to programs not included in coreutils may not work if the programs and dependencies required are not installed on your system. Many modern terminals will automatically offer to fix this.
 
