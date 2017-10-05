@@ -34,7 +34,7 @@ ln -s .zshrc "$HOME/.zshrc"
     * zsh configuration file that is sourced when zsh is run
 
 ## bashrc ##
-### Information on the .bashrc###
+### Information on the .bashrc ###
 This .bashrc is designed to be adaptable and usable across different terminals in Linux and UNIX based operating systems.
 Your .bashrc should be created inside of your home folder.
   ~/.bashrc
