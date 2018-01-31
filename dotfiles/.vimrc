@@ -15,7 +15,7 @@ syntax enable
 set background=dark                             " dark background!
 if exists("$DISPLAY") " in X11
     set t_Co=256
-    colorscheme monokai
+    " colorscheme monokai
     " colorscheme solarized
     " colorscheme jellybeans
     " let airline_powerline_fonts=1
