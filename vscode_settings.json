@@ -44,5 +44,6 @@
     "workbench.iconTheme": "Monokai Pro (Filter Octagon) Icons",
     "editor.showFoldingControls": "always",
     "vim.foldfix": true,
-    "workbench.colorTheme": "Cobalt2"
+    "workbench.colorTheme": "Monokai",
+    "python.languageServer": "Microsoft",
 }
