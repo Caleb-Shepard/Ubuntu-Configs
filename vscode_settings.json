@@ -11,6 +11,7 @@
     "editor.formatOnSaveTimeout": 90000,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorStyle": "block",
+    "telemetry.enableTelemetry": false,
     // https://github.com/psf/black/issues/1161
     /* Black doesn't respect line lengths ,don't use it.
     "python.linting.flake8Enabled": false,
