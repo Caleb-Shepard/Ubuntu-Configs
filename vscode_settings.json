@@ -7,20 +7,10 @@
     "python.linting.flake8Enabled": false,
     "python.linting.flake8Path": "flake8",
     "editor.formatOnSave": false,
-    // Black can take a long time to format; increase timeout
     "editor.formatOnSaveTimeout": 90000,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorStyle": "block",
     "telemetry.enableTelemetry": false,
-    // https://github.com/psf/black/issues/1161
-    /* Black doesn't respect line lengths ,don't use it.
-    "python.linting.flake8Enabled": false,
-    "python.formatting.provider": "black",
-    "python.formatting.blackArgs": [
-        "--line-length",
-        "80"
-    ],
-    */
     "python.linting.flake8Args": [
         //"--max-line-length=80",
         "--ignore=E402,F841,F401,F403,E302,E305,E221,W504,E241,E272,E203, E501, E222",
@@ -42,7 +32,6 @@
         "<C-c>": false,
         "<C-f>": false,
     },
-    "workbench.iconTheme": "Monokai Pro (Filter Octagon) Icons",
     "editor.showFoldingControls": "always",
     "vim.foldfix": true,
     "workbench.colorTheme": "Monokai",
