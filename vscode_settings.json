@@ -1,39 +1,52 @@
 {
-    "window.zoomLevel": 0,
+    // All Python settings
+    "[python]": {
+        "editor.formatOnPaste": false
+    },
     "python.jediEnabled": false,
-    "python.pythonPath": "py",
+    "python.languageServer": "Microsoft",
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": false,
     "python.linting.flake8Path": "flake8",
-    "editor.formatOnSave": false,
-    "editor.formatOnSaveTimeout": 90000,
-    "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.cursorStyle": "block",
-    "telemetry.enableTelemetry": false,
     "python.linting.flake8Args": [
         //"--max-line-length=80",
         "--ignore=E402,F841,F401,F403,E302,E305,E221,W504,E241,E272,E203, E501, E222",
     ],
-    "[python]": {
-        "editor.formatOnPaste": false
-    },
+    "python.pythonPath": "py",
+
+    // --------- VSCode interactive behaviors ---------
+    //
+    // Terminal settings
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "block",
+
+    // Editor settings
     "editor.cursorBlinking": "phase",
-    "vim.handleKeys": {
-        "<C-w>": false,
-        "<C-o>": false,
-        "<C-y>": false,
-        "<C-t>": false,
-        "<C-n>": false,
-        "<C-a>": false,
-        "<C-h>": false,
-        "<C-x>": false,
-        "<C-v>": false,
-        "<C-c>": false,
-        "<C-f>": false,
-    },
+    "editor.formatOnSave": false,
+    "editor.formatOnSaveTimeout": 90000,
     "editor.showFoldingControls": "always",
+    "editor.wordWrap": "on",
+    // Vim+Editor interaction settings
+    "vim.useCtrlKeys": false,
     "vim.foldfix": true,
-    "workbench.colorTheme": "Monokai",
-    "python.languageServer": "Microsoft",
+
+    // Window settings
+    "window.zoomLevel": 1,
+
+    // Workbench settings
+    "workbench.colorTheme": "Cobalt2",
+    "workbench.startupEditor": "none",
+
+    // -------- VSCode noninteractive behaviors --------
+    //
+    "telemetry.enableTelemetry": false,
+    // Trust enabled to true *to enable the feature*
+    "security.workspace.trust.enabled": true,
+    // emptyWindow false makes new windows restricted
+    "security.workspace.trust.emptyWindow": false,
+    // startupPrompt never will remove the workspace trust dialogs
+    // the Restricted Mode icon should still be visible (bot left)
+    "security.workspace.trust.startupPrompt": "never",
+    // startupEditor "none" will disable the new window welcome page
 }
