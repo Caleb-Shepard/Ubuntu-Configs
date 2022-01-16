@@ -4,7 +4,7 @@
         "editor.formatOnPaste": false
     },
     "python.jediEnabled": false,
-    "python.languageServer": "Microsoft",
+    "python.languageServer": "Pylance",
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": false,
@@ -31,6 +31,9 @@
     "vim.useCtrlKeys": false,
     "vim.foldfix": true,
 
+    // Fix keyboard compat issue with remapped keys, vscode, and vscodevim
+    "keyboard.dispatch": "keyCode",
+
     // Window settings
     "window.zoomLevel": 1,
 
@@ -39,8 +42,7 @@
     "workbench.startupEditor": "none",
 
     // -------- VSCode noninteractive behaviors --------
-    //
-    "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
     // Trust enabled to true *to enable the feature*
     "security.workspace.trust.enabled": true,
     // emptyWindow false makes new windows restricted
