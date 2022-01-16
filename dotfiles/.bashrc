@@ -156,6 +156,10 @@ alias cll='clear; ll -AFG | less'
 alias l='ls -G'
 alias la='ls -AG'
 
+# user specific aliases
+touch ~/.aliases.sh
+source ~/.aliases.sh
+
 # term initialization prompt
 echo -e "\x1b[1;1H\x1b[JRunning bash as $(whoami)\n$(pwd)"
 fortune | cowsay | lolcat
