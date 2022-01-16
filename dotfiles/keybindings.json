@@ -1,12 +1,6 @@
 // Place your key bindings in this file to override the defaults
 [
-    {
-        // Keybind to run the wwm "Better Align" plugin
-        "key"    : "ctrl+alt+a",
-        "command": "wwm.aligncode",
-        "when"   : "editorTextFocus && !editorReadOnly"
-    }
-    // keybinbds to toggle between maximized editor and maximized terminal
+    // Keybinds to toggle between maximized editor and maximized terminal
     {
         "key": "ctrl+alt+m",
         "command": "workbench.action.toggleMaximizedPanel",
