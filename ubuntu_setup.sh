@@ -79,7 +79,7 @@ cat \"source '~/.aliases.sh'\" >> ~/.zshrc
 cat \"emulate sh -c 'source /etc/profile.d/apps-bin-path.sh'\" >> ~/.bashrc
 
 
-# ! Pull dotfiles
+# ! Move dotfiles
 mv Ubuntu-Configs/dotfiles* ~/
 
 
