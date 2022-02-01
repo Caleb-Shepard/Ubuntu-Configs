@@ -118,7 +118,8 @@ addon_pages=(
     "https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/",
     "https://addons.mozilla.org/en-US/firefox/addon/open-url-in-container/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search",
     "https://addons.mozilla.org/en-US/firefox/addon/tranquility-1/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search",
-    "https://addons.mozilla.org/en-US/firefox/addon/youtube-audio/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search"
+    "https://addons.mozilla.org/en-US/firefox/addon/youtube-audio/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search",
+    "https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search"
 )
 
 for url in "${addon_pages[@]}":
