@@ -34,7 +34,8 @@ apt_packages=(
     "gimp",
     "build-essential",
     "nodejs",
-    "signal-desktop"
+    "signal-desktop",
+    "kubuntu-desktop"
 )
 for package in "${apt_packages[@]}"
 do
@@ -96,6 +97,10 @@ curl https://files.multimc.org/downloads/multimc_1.6-1.deb -o multimc.deb && sud
 # that may or may not exist!
 # apt purge -y *nvidia*
 # ubuntu-drivers autoinstall
+
+# fix for snaps not showing in kde https://forum.snapcraft.io/t/desktop-snaps-do-not-appear-in-the-dash-menu-on-gnome-in-17-10-final-beta/2340/12
+# mkdir -p ~/.config/environment.d
+# echo "PATH=$PATH:/snap/bin\nXDG_DATA_DIRS=\"${XDG_DATA_DIRS:-/usr/local/share:/usr/share}:/var/lib/snapd/desktop\"" > ~/.config/environment.d/60-snap-icons-and-bin.conf
 
 # Install WoeUSB-ng
 sudo apt install git p7zip-full python3-pip python3-wxgtk4.0 grub2-common grub-pc-bin
