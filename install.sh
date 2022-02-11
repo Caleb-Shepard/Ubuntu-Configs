@@ -1,2 +1,2 @@
 sudo apt install -y python3 python3-pip curl
-sh -c "$(curl -fsSL https://raw.github.com/Caleb-Shepard/Ubuntu-Config/master/ubuntu_setup.py)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/Caleb-Shepard/Ubuntu-Configs/master/ubuntu_setup.sh)"
