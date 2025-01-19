@@ -116,6 +116,22 @@ sudo pip3 install .
 cd ../
 rm -rf WoeUSB-ng
 
+# Install key remaps with keyd
+git clone https://github.com/rvaiya/keyd
+cd keyd
+make && sudo make install
+sudo systemctl enable keyd && sudo systemctl start keyd
+echo "\
+[ids]
+*
+[main]
+capslock=leftcontrol
+leftcontrol=leftalt
+leftalt=esc\
+" > /etc/keyd/default.conf
+cd ../
+rm -rf keyd
+
 # Open pages for each plugin that you normally install in firefox
 addon_pages=(
     "https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search"
