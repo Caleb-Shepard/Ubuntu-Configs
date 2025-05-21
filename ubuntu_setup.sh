@@ -83,6 +83,7 @@ done
 cat \"emulate sh -c 'source /etc/profile.d/apps-bin-path.sh'\" >> ~/.zshrc
 cat \"source '~/.aliases.sh'\" >> ~/.zshrc
 cat \"emulate sh -c 'source /etc/profile.d/apps-bin-path.sh'\" >> ~/.bashrc
+cat \"source '~/.aliases.sh'\" >> ~/.bashrc
 
 # ! Move configuration options, directories and subdirectories into filetree
 mv Ubuntu-Configs/opconfig* ~/
