@@ -30,7 +30,7 @@ apt_packages=(
     "cowsay"
     "fortune"
     "vim"
-    "youtube-dl"
+    "yt-dlp"
     "gparted"
     "pythonpy"
     "xkeycaps"
