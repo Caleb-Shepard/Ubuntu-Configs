@@ -19,8 +19,7 @@ apt_packages=(
     "git"
     "python3"
     "python3-pip"
-    "firefox"          # Firefox will become a snap package soon
-    "openjdk-17-jdk"
+    "default-jdk"
     "curl"
     "gradle"
     "xclip"
@@ -41,6 +40,7 @@ apt_packages=(
     "nodejs"
     "signal-desktop"
     "kubuntu-desktop"
+    "wget"
 )
 for package in "${apt_packages[@]}"
 do
@@ -128,9 +128,33 @@ echo "\
 capslock=leftcontrol
 leftcontrol=leftalt
 leftalt=esc\
+backslash=underscore
+rightalt=backslash
 " > /etc/keyd/default.conf
 cd ../
 rm -rf keyd
+
+# install firefox
+sudo install -d -m 0755 /etc/apt/keyrings
+wget -q https://packages.mozilla.org/apt/repo-signing-key.gpg -O- | sudo tee /etc/apt/keyrings/packages.mozilla.org.asc > /dev/null
+# Extract the fingerprint
+fingerprint=$(gpg -n -q --import --import-options import-show /etc/apt/keyrings/packages.mozilla.org.asc | \
+awk '/pub/{getline; gsub(/^ +| +$/, ""); print}')
+# Expected fingerprint
+expected="35BAA0B33E9EB396F59CA838C0BA5CE6DC6315A3"
+if [[ "$fingerprint" == "$expected" ]]; then
+    echo -e "\nThe key fingerprint matches ($fingerprint).\n"
+    echo "deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.asc] https://packages.mozilla.org/apt mozilla main" | \
+    sudo tee -a /etc/apt/sources.list.d/mozilla.list > /dev/null
+    sudo tee /etc/apt/preferences.d/mozilla > /dev/null <<EOF
+Package: *
+Pin: origin packages.mozilla.org
+Pin-Priority: 1000
+EOF
+    sudo apt-get update && sudo apt-get install firefox
+else
+    echo -e "\nVerification failed: the fingerprint ($fingerprint) does not match the expected one ($expected).\nYou will need to retry your Firefox install.\n"
+fi
 
 # Open pages for each plugin that you normally install in firefox
 addon_pages=(
